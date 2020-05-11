@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
-public class MP0 {
+public class MP1 {
     Random generator;
     String userName;
     String delimiters = " \t,;.?!-:@[](){}_*/";
@@ -19,7 +19,7 @@ public class MP0 {
             "few", "more", "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same", "so", "than",
             "too", "very", "s", "t", "can", "will", "just", "don", "should", "now"};
 
-    public MP0(String userName) {
+    public MP1(String userName) {
         this.userName = userName;
     }
 
@@ -52,7 +52,7 @@ public class MP0 {
     	}
     	else{
     		String userName = args[0];
-	    	MP0 mp = new MP0(userName);
+	    	MP1 mp = new MP1(userName);
 	    	String[] topItems = mp.process();
 
 	        for (String item: topItems){
