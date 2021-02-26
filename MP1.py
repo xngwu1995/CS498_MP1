@@ -31,6 +31,6 @@ def process(userID):
     # TODO
                     
     for word in ret:
-        print word
+        print(word)
 
 process(sys.argv[1])
